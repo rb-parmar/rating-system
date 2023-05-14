@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+:root {
+  --app-border-radius: 5px;
+  --app-dark-bg: #1a1d28;
+  --app-green: #33ab4e;
+  --app-purple: #833cff;
+  --app-orange1: #ff833c;
+  --app-orange2: #f18115;
+  --app-lighter-orange: #ffb300;
+  --app-dark-blue: #1a2649;
+  --app-lighter-blue: #506290;
+  --app-medium-blue: #283862;
+  --app-grey: #f3f4f5;
+  --app-red: #ff3c57;
+  --app-red-hover: #ff2846;
+}
+
+body {
+  background-color: var(--app-dark-bg);
+}
+
+.container {
+  width: min(100% - 30px, 1200px);
+  margin-inline: auto;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.container h2 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  height: 40px;
+}
+
+.stars {
+  gap: 5px;
+  height: 40px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.dialog-open {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 35px;
+  width: 150px;
+  padding: 0 10px;
+  border-radius: 50px;
+  background-color: #09f;
+  color: #fff;
+  font-size: 16px;
+  line-height: 35px;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+}
+
+.dialog-open:hover {
+  background-color: rgb(0, 140, 233);
+}
+
+.dialog {
+  position: fixed;
+  height: 200px;
+  width: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: rgb(133, 133, 133) 1px solid;
+  text-align: center;
+  top: 40vh;
+  right: 45%;
+}
+
+.dialog p {
+  margin-top: 70px;
+  font-size: 18px;
+}
+
+.dialog-close {
+  margin-top: 50px;
+  height: 35px;
+  width: 100px;
+  padding: 0 10px;
+  border-radius: 50px;
+  background-color: #09f;
+  color: #fff;
+  font-size: 16px;
+  line-height: 35px;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+
+}
